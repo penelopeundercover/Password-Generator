@@ -1,26 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var passwordLength = 8;
-var choiceArray = [
-    function generateRandomLowercaseLetter() {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"
-    return alphabet[Math.floor(Math.random()* alphabet.length)]
-},
-
-function generateRandomUppercaseLetter() {
-    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    return alphabet[Math.floor(Math.random()* alphabet.length)]
-},
-
-function generateRandomNumber(min0, max9){
-    return Math.floor(Math.random()* (9-0 +1)) + 0;
-},
-
-function generateSpecialCharacter() {
-    const specialCharacters = "!@#$%^&*()-_+={}[]\|<>/?"
-    return specialCharacters[Math.floor(Math.random()*specialCharacters.length)]
-}
-]
+var choiceArray = [];
 
 function generatePassword() {
     console.log("Hey! You clicked the button!") //This just tells me if the button is connected correctly.
@@ -30,6 +11,24 @@ function generatePassword() {
 
 }
 
+function generateRandomLowercaseLetter() {
+    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+    return alphabet[Math.floor(Math.random()* alphabet.length)]
+};
+
+function generateRandomUppercaseLetter() {
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    return alphabet[Math.floor(Math.random()* alphabet.length)]
+};
+
+function generateRandomNumber(min0, max9){
+    return Math.floor(Math.random()* (9-0 +1)) + 0;
+};
+
+function generateSpecialCharacter() {
+    const specialCharacters = "!@#$%^&*()-_+={}[]\|<>/?"
+    return specialCharacters[Math.floor(Math.random()*specialCharacters.length)]
+};
 
 function getPrompts(){
     passwordLength = parseInt(prompt("How long do you want your password to be? Choose a number between 8 and 128."));
