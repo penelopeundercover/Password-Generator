@@ -56,7 +56,7 @@ THEN a password is generated that matches the selected criteria
 1.Guarantee we have at least one character of each required type. (Meaning each type the user chose to be used in their password.)
     -If any of the confirms are true, then add a character to your string(password). Just one. That's how you will first guarantee you have one of each type they chose.
     -Once you have that you should be able to grab whatever characters are remaining to fill up the rest.
-    (Once you have one of each criteria, you can freely/randomly select a charater from any character type)
+    (Once you have one of each criteria, you can freely/randomly select a character from any character type)
     -After we have one character of every type fulfilled, we can merge all valid characters into a single giant character pool.
     -Then we can randomly select from the giant character pool to fill the password until it is the proper length.
     -Once you get it filled to the proper length, you return the password and you're done.
